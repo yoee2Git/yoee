@@ -1,43 +1,104 @@
 <template>
   <div class="aside-page">
-    <el-row :gutter="0" class="aside-content">
-      <el-col :span="24">
-        <img src="~@/assets/img/me.png" alt srcset />
-      </el-col>
-      </el-col>
+    <el-row class="logo">
+      <el-col :span="24"></el-col>
     </el-row>
+    <div class="aside-content">
+      <el-row>
+        <el-col :span="24">
+          <img src="~@/assets/img/me.png" alt srcset />
+        </el-col>
+      </el-row>
+      <div class="info">
+        <el-row>
+          <el-row>
+            <el-col :span="8">name:</el-col>
+            <el-col :span="16">Yoee</el-col>
+          </el-row>
+        </el-row>
+        <el-divider></el-divider>
+        <el-row>
+          <el-row>
+            <el-col :span="8">github:</el-col>
+            <el-col :span="16">
+              <a href="https://github.com/yoeex">https://github.com/yoeex</a>
+            </el-col>
+          </el-row>
+        </el-row>
+        <el-divider></el-divider>
+        <el-row>
+          <el-row>
+            <el-col :span="8">Blog:</el-col>
+            <el-col :span="16">
+              <a href="http://yoeex.com">http://yoeex.com</a>
+            </el-col>
+          </el-row>
+        </el-row>
+        <el-divider></el-divider>
+        <el-row>
+          <el-row>
+            <el-col :span="8">TEL:</el-col>
+            <el-col :span="16">19920090852</el-col>
+          </el-row>
+          <el-divider></el-divider>
+          <el-row>
+            <el-col :span="8">Wechart:</el-col>
+            <el-col :span="16">helloyoee</el-col>
+          </el-row>
+        </el-row>
+        <el-row></el-row>
+      </div>
+    </div>
   </div>
 </template>
-
 <script>
 export default {
-  name: "",
-  data() {
-    return {};
+  methods: {
+    randomColr() {
+      return parseInt(Math.random() * (1000000 * 1)).toString();
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
 .aside-page {
-  width: 100%;
-  height: 100%;
-  .aside-content {
+  color: #708090;
+  .info{
     position: relative;
+    left: 2rem;
+    top: 5rem;
+  }
+  a{
+    text-decoration: none;
+    &:link{
+      color: #708090;
+    }
+    &:hover{
+      color: #708090;
+    }
+    &:visited{
+      color: #708090;
+    }
+    &:active{
+      color: #708090;
+    }
+  }
+  .aside-content {
+    position: fixed;
+    top: 12rem;
     img {
-      width: 200px;
-      top: 150px;
-      left: 20px;
+      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+      position: relative;
+      width: 15rem;
+      left: 2rem;
       filter: grayscale(100%);
       transition: filter 1s;
-      border-radius: 50%;
-      position: fixed;
       &:hover {
         filter: grayscale(1%);
         transition: filter 1s;
       }
     }
-
   }
 }
 </style>

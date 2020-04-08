@@ -1,17 +1,19 @@
 <template>
   <div id="app">
     <el-container>
-      <el-header>
-          <Nav />
-        </el-header>
-      <el-container>
-        <el-main>
-          <el-aside width="220px">
+      <el-aside width="20rem">
         <Aside />
       </el-aside>
+      <el-container>
+        <el-main>
+          <el-header>
+            <Nav />
+          </el-header>
           <router-view />
         </el-main>
-        <el-footer>Footer</el-footer>
+        <!-- <el-footer>
+          footer
+        </el-footer> -->
       </el-container>
     </el-container>
   </div>
@@ -30,6 +32,10 @@ export default {
 </script>
 
 <style lang="scss">
+html,body{
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  color: #708090;
+}
 * {
   margin: 0;
   padding: 0;

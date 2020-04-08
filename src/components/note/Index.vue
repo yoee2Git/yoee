@@ -1,7 +1,6 @@
 <template>
   <div>
-    <router-link to="/show/meituan">meitaun</router-link>
-    <router-view />
+    笔记
   </div>
 </template>
 

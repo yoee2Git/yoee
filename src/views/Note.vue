@@ -1,6 +1,7 @@
 <template>
   <div class="about">
-    <h1>This is an note page</h1>
+    <router-link to="node/notejs">js</router-link>
+    <router-view></router-view>
   </div>
 </template>
 

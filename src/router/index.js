@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
+import Show from '@/views/Show.vue'
+import Note from '@/views/Note'
+import Aside from '@/views/Aside'
 
 Vue.use(VueRouter);
 
@@ -17,12 +20,12 @@ const routes = [
 	{
 		path: '/aside',
 		name: 'Aside',
-		component: () => import('../views/Aside.vue')
+		component: Aside
 	},
 	{
 		path: '/show',
 		name: 'Show',
-    component: () => import('../views/Show.vue'),
+    component: Show,
     children: [
       {
       path: 'meitaun',
@@ -33,10 +36,13 @@ const routes = [
 	{
 		path: '/note',
 		name: 'Note',
-		// route level code-splitting
-		// this generates a separate chunk (about.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
-		component: () => import(/* webpackChunkName: "about" */ '../views/Note.vue')
+		component: Note,
+		children: [
+			{
+				path: 'notejs',
+				component: () => import('@/components/note/Index.vue')
+			}
+		]
 	}
 ];
 
