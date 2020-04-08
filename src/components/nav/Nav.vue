@@ -1,5 +1,5 @@
 <template>
-  <el-menu class="el-menu-demo nav" mode="horizontal" active-text-color="red" default-active='1'>
+  <el-menu class="el-menu-demo nav" mode="horizontal" active-text-color="red">
     <el-menu-item index="1">
       <router-link to="/home" tag="span">Home</router-link>
     </el-menu-item>
@@ -29,5 +29,6 @@ export default {
 .nav{
   width: 100%;
   position: fixed;
+  z-index: 9999;
 }
 </style>
