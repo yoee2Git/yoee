@@ -2,7 +2,12 @@
   <div class="page-about-content">
     <el-row :gutter="20">
       <el-col :span="24">
-        <div>aaa</div>
+        <div class="page-text">
+          <span>Hey!</span>
+          <p>我是努力想想了解后端的<span class="i-info">前端开发者</span></p>
+          <i>一起合作共事吧</i>
+          <p>期待您@我的邮箱</p>
+        </div>
       </el-col>
     </el-row>
     <el-row :gutter="20" class="page-about-mail">
@@ -36,20 +41,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page-about-mail{
+.page-about-content {
+  margin: 0 auto;
+  width: 50rem;
   position: relative;
-
-  margin-top: 40%;
-}
-.page-about-text{
-  position: relative;
-  margin-top: 10px;
-}
-.sendMail {
-  position: relative;
-  top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .page-text{
+    position: absolute;
+    top: 100px;
+    font-size: 20px;
+    .i-info{
+      color: red;
+    }
+  }
+  .page-about-mail {
+    position: relative;
+    margin-top: 45%;
+  }
+  .page-about-text {
+    position: relative;
+    margin-top: 20px;
+  }
+  .sendMail {
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 </style>

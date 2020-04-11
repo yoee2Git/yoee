@@ -30,13 +30,7 @@ const routes = [
 	{
 		path: '/note',
 		name: 'Note',
-		component: Note,
-		children: [
-			{
-				path: 'notejs',
-				component: () => import('@/components/note/Index.vue')
-			}
-		]
+		component: Note
 	}
 ];
 

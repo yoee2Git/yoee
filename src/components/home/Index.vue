@@ -34,14 +34,15 @@ export default {
   color: #708090;
   width: 100%;
   top: 45%;
-  left: 50%;
+  left: 45%;
+  margin-left: 80px;
   position: absolute;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   .hello{
-    font-size: 30px;
+    font-size: 32px;
   }
   .yoee{
     font-size: 50px;

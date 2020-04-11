@@ -1,19 +1,19 @@
 <template>
   <div class="about">
-    <router-link to="node/notejs">js</router-link>
-    <router-view></router-view>
+    <index-note />
   </div>
 </template>
 
 <script>
+import IndexNote from '@/components/note/Index.vue'
 export default {
-  
+  components: {
+    IndexNote
+  }
 }
 </script>
 
 <style lang="scss">
   .about{
-    height: 100vh;
-    widows: 100vw;
   }
 </style>

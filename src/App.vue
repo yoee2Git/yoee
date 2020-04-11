@@ -5,15 +5,15 @@
         <Aside />
       </el-aside>
       <el-container>
-        <el-main>
+        <el-main class="content">
           <el-header>
             <Nav />
           </el-header>
           <router-view />
         </el-main>
-        <el-footer>
+        <!-- <el-footer>
           footer
-        </el-footer>
+        </el-footer> -->
       </el-container>
     </el-container>
   </div>
@@ -32,6 +32,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
- @import '~@/assets/css/base.css'
+<style lang="scss" scoped>
+ @import '~@/assets/css/base.css';
 </style>
