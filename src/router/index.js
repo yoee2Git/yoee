@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
-import Show from '@/views/Show.vue'
+import About from '@/views/About'
 import Note from '@/views/Note'
 import Aside from '@/views/Aside'
 
@@ -23,15 +23,9 @@ const routes = [
 		component: Aside
 	},
 	{
-		path: '/show',
-		name: 'Show',
-    component: Show,
-    children: [
-      {
-      path: 'meitaun',
-      component: () => import('@/components/show/Index.vue')
-    }
-  ]
+		path: '/about',
+		name: 'About',
+		component: About
 	},
 	{
 		path: '/note',

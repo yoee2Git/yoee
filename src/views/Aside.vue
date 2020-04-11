@@ -1,11 +1,8 @@
 <template>
   <div class="aside-page">
-    <el-row class="logo">
-      <el-col :span="24"></el-col>
-    </el-row>
     <div class="aside-content">
       <el-row>
-        <el-col :span="24">
+        <el-col :span="24" :xs="8">
           <img src="~@/assets/img/me.png" alt srcset />
         </el-col>
       </el-row>
@@ -54,9 +51,6 @@
 <script>
 export default {
   methods: {
-    randomColr() {
-      return parseInt(Math.random() * (1000000 * 1)).toString();
-    }
   }
 };
 </script>

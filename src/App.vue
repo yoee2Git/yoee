@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <el-container>
-      <el-aside width="20rem">
+      <el-aside width="18rem">
         <Aside />
       </el-aside>
       <el-container>
@@ -21,6 +21,7 @@
 
 <script>
 import Nav from "@/components/nav/Nav.vue";
+
 import Aside from "@/views/Aside.vue";
 export default {
   name: "app",
@@ -32,14 +33,5 @@ export default {
 </script>
 
 <style lang="scss">
-html,body{
-  width: 100%;
-  height: 100%;
-  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
-  color: #708090;
-}
-* {
-  margin: 0;
-  padding: 0;
-}
+ @import '~@/assets/css/base.css'
 </style>
