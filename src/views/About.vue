@@ -29,6 +29,7 @@
 </template>
 
 <script>
+// import sendMail from "@/assets/js/Mail.js"
 export default {
   name: "",
   data() {
@@ -48,6 +49,8 @@ export default {
   .page-text{
     position: absolute;
     top: 100px;
+    left: 10rem;
+    line-height: 2.5rem;
     font-size: 20px;
     .i-info{
       color: red;
