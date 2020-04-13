@@ -29,7 +29,6 @@
 </template>
 
 <script>
-// import sendMail from "@/assets/js/Mail.js"
 export default {
   name: "",
   data() {

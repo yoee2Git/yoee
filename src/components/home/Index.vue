@@ -5,10 +5,10 @@
         <span class="hello">Hello</span>
       </el-col>
     </el-row>
-    <el-col :span="10">
+    <el-col :span="10" class="hemo-index-me">
       <div class="yoee">
         I Am
-        <span>Yoee</span> || 杨一
+        <span>Yoee</span> <i></i> 杨一
       </div>
     </el-col>
     <el-row>
@@ -17,7 +17,7 @@
         <span>Developer</span>
       </el-col>
     </el-row>
-    <i></i>
+    <!-- <i></i> -->
   </div>
 </template>
 
@@ -31,6 +31,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media screen and(min-width: 500px) and(max-width: 600px) {
+  .hemo-index-page {
+    display: none !important;
+  }
+}
 .hemo-index-page {
   color: #708090;
   width: 100%;
@@ -60,27 +65,24 @@ export default {
     }
   }
   i {
-    &::before {
-      position: relative;
-      top: -4.5rem;
-      left: 25rem;
-      content: "";
-      display: block;
-      height: 30px;
-      width: 0px;
-      animation-name: iani;
-      animation-duration: 5ms;
-      animation-timing-function: ease-out;
-      animation-iteration-count: infinite;
-      @keyframes iani {
-        0% {
-          border: 6px solid black;
-        }
-        100% {
-          border: 6px solid red;
-        }
-      }
-    }
+    display: inline-block;
+    vertical-align:middle;
+    height: 50px;
+    width: 0px;
+    margin: 0px 20px;
+    border: 6px solid red;
+    animation: blink 1.5s steps(1, end) infinite;
+  }
+}
+@keyframes blink {
+  0% {
+    border-color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    border-color: rgba(70, 80, 90,1);
+  }
+  100% {
+    border-color: rgba(0, 0, 0, 0);
   }
 }
 </style>
