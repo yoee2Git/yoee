@@ -1,0 +1,37 @@
+<template>
+  <b-container fluid>
+    <b-row class="mb-2">
+      <b-col sm='4' md="3" lg="3" xl="2">
+        <div>
+          <ul class="h">
+            <li class="h-item"><nuxt-link to="notes/vue生命周期钩子函数">vue生命周期钩子函数</nuxt-link></li>
+            <li class="h-item"><nuxt-link to="notes/Middleware">Middleware</nuxt-link></li>
+            <li class="h-item"><nuxt-link to="a">无中生有的标题</nuxt-link></li>
+            <li class="h-item"><nuxt-link to="a">无中生有的标题</nuxt-link></li>
+          </ul>
+        </div>
+      </b-col>
+      <b-col sm="8" md="9" lg="9" xl="10">
+        <b-carousel id="carousel-fade" style="text-shadow: 0px 0px 2px #000" fade indicators>
+          <b-carousel-slide img-src="~@/assets/img/note/noteweiper-1.png"></b-carousel-slide>
+          <b-carousel-slide img-src="~@/assets/img/note/noteweiper-3.png"></b-carousel-slide>
+        </b-carousel>
+      </b-col>
+    </b-row>
+  </b-container>
+</template>
+
+<script>
+export default {
+};
+</script>
+
+<style lang="scss" scoped>
+.h{
+  position: relative;
+  top: 30px;
+  .h-item{
+    padding: 4px 0px;
+  }
+}
+</style>
