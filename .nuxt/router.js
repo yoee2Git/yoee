@@ -5,6 +5,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 
 const _6f942219 = () => interopDefault(import('../pages/note.vue' /* webpackChunkName: "pages/note" */))
 const _ee373b32 = () => interopDefault(import('../pages/notes/Middleware.vue' /* webpackChunkName: "pages/notes/Middleware" */))
+const _7c873b9a = () => interopDefault(import('../pages/notes/vue插槽-vslot.vue' /* webpackChunkName: "pages/notes/vue插槽-vslot" */))
 const _13d02630 = () => interopDefault(import('../pages/notes/vue生命周期钩子函数.vue' /* webpackChunkName: "pages/notes/vue生命周期钩子函数" */))
 const _2971a88a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -32,6 +33,10 @@ export const routerOptions = {
     path: "/notes/Middleware",
     component: _ee373b32,
     name: "notes-Middleware"
+  }, {
+    path: "/notes/vue插槽-vslot",
+    component: _7c873b9a,
+    name: "notes-vue插槽-vslot"
   }, {
     path: "/notes/vue生命周期钩子函数",
     component: _13d02630,

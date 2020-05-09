@@ -73,7 +73,7 @@
                 squared
                 variant="info"
                 v-b-popover.hover.right="'Hi 这是我的邮箱连接地址'"
-              >Email ?</b-button>
+              >About</b-button>
             </b-row>
           </b-container>
         </b-jumbotron>

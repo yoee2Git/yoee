@@ -11,9 +11,9 @@
     </b-navbar>
     <nuxt />
     <b-container fluid class="ft">
-      <b-row class="ft">
+      <b-row>
       <b-col>
-        <a href="http://beian.miit.gov.cn/state/outPortal/loginPortal.action">
+        <a href="http://beian.miit.gov.cn">
         Copyright © 2020-2021 YOEE . 黔ICP备20003571号
         </a>
       </b-col>
@@ -23,16 +23,21 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .roter-to{
   display: flex;
-  margin-left: 8rem;
+  margin-left: 6rem;
 }
 
 .ft{
+  margin-top:2rem;
   background-color: #ddd;
-  position: relative;
-  padding: 50px;
+  padding: 1.5rem 2rem;
   text-align: center;
+  bottom: 0;
+  .col{
+    padding: 0;
+    margin: 0;
+  }
 }
 </style>

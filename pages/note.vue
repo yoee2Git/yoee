@@ -6,8 +6,7 @@
           <ul class="h">
             <li class="h-item"><nuxt-link to="notes/vue生命周期钩子函数">vue生命周期钩子函数</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/Middleware">Middleware</nuxt-link></li>
-            <li class="h-item"><nuxt-link to="a">无中生有的标题</nuxt-link></li>
-            <li class="h-item"><nuxt-link to="a">无中生有的标题</nuxt-link></li>
+            <li class="h-item"><nuxt-link to="notes/vue插槽-vslot">vue插槽-vslot</nuxt-link></li>
           </ul>
         </div>
       </b-col>
@@ -29,7 +28,8 @@ export default {
 <style lang="scss" scoped>
 .h{
   position: relative;
-  top: 30px;
+  top: 1.2rem;
+  padding-bottom: 1.5rem;
   .h-item{
     padding: 4px 0px;
   }
