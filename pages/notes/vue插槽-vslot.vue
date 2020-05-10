@@ -1,6 +1,8 @@
 <template>
-  <b-container fluid="sm" class="note-content">
-    <h2>v-slot 插槽</h2>
+  <div class="center-content">
+    <b-row>
+      <b-col offset="8">
+        <h2>v-slot 插槽</h2>
     <div
       class="code"
     >在 2.6.0 中，我们为具名插槽和作用域插槽引入了一个新的统一的语法 (即 v-slot 指令)。它取代了 slot 和 slot-scope 这两个目前已被废弃但未被移除且仍在文档中的 attribute。</div>
@@ -14,6 +16,7 @@
     <div class="imgdv">
       <p>具名插槽</p>
       <i>默认的 slot name 是 default</i>
+      <br>
       <img src="~@/assets/img/note/slot/slot2.png" alt />
       <br />
       <br />
@@ -43,9 +46,11 @@
         <span class="txt-color-deeppink">&lt;slot&gt;</span>元素的一个 attribute 绑定上去：
       </p>
       <img src="~@/assets/img/note/slot/slot6.png" alt />
+      <br>
       绑定在
       <span class="txt-color-deeppink">&lt;slot&gt;</span>元素上的 attribute 被称为插槽 prop。现在在父级作用域中，我们可以使用带值的
       <span class="txt-color-deeppink">&lt;v-slot&gt;</span> 来定义我们提供的插槽 prop 的名字：
+      <br>
       <img src="~@/assets/img/note/slot/slot7.png" alt />
 
       <p>
@@ -54,7 +59,9 @@
       </p>
       <i>于 2020-5-10 00:19</i>
     </div>
-  </b-container>
+      </b-col>
+    </b-row>
+  </div>
 </template>
 
 <script>

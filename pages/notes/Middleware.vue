@@ -1,5 +1,5 @@
 <template>
- <b-container fluid="sm" class="note-content">
+ <b-container class="note-content">
    <h2>Middleware 中间件</h2>
    <hr>
       <b-img src="~@/assets/img/note/Middleware.jpg" fluid alt="Fluid image"></b-img>

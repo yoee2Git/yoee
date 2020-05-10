@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content">
     <b-navbar type="dark" variant="dark">
       <b-navbar-nav>
         <b-navbar-brand href="#">YOEE</b-navbar-brand>
@@ -30,10 +30,11 @@
 }
 
 .ft{
-  margin-top:2rem;
+  margin-top:10rem;
   background-color: #ddd;
   padding: 1.5rem 2rem;
   text-align: center;
+
   bottom: 0;
   .col{
     padding: 0;
