@@ -24,6 +24,10 @@
 </template>
 
 <style lang="scss" scoped>
+.content{
+  width: 100%;
+  overflow: scroll;
+}
 .roter-to{
   display: flex;
   margin-left: 6rem;

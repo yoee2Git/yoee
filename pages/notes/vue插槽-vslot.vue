@@ -1,8 +1,6 @@
 <template>
-  <div class="center-content">
-    <b-row>
-      <b-col offset="8">
-        <h2>v-slot 插槽</h2>
+  <div class='conten-center-left'>
+    <h2>v-slot 插槽</h2>
     <div
       class="code"
     >在 2.6.0 中，我们为具名插槽和作用域插槽引入了一个新的统一的语法 (即 v-slot 指令)。它取代了 slot 和 slot-scope 这两个目前已被废弃但未被移除且仍在文档中的 attribute。</div>
@@ -16,7 +14,7 @@
     <div class="imgdv">
       <p>具名插槽</p>
       <i>默认的 slot name 是 default</i>
-      <br>
+      <br />
       <img src="~@/assets/img/note/slot/slot2.png" alt />
       <br />
       <br />
@@ -28,7 +26,9 @@
       <div class="code">自 2.6.0 起有所更新。已废弃的使用 slot-scope attribute 的语法在这里。</div>
       <p>
         有时让插槽内容能够访问子组件中才有的数据是很有用的。例如，设想一个带有如下模板的
-        <span class="txt-color-deeppink">&lt;current-user&gt;</span>组件：
+        <span
+          class="txt-color-deeppink"
+        >&lt;current-user&gt;</span>组件：
       </p>
       <img src="~@/assets/img/note/slot/slot4.png" alt />
       <br />
@@ -46,11 +46,10 @@
         <span class="txt-color-deeppink">&lt;slot&gt;</span>元素的一个 attribute 绑定上去：
       </p>
       <img src="~@/assets/img/note/slot/slot6.png" alt />
-      <br>
-      绑定在
+      <br />绑定在
       <span class="txt-color-deeppink">&lt;slot&gt;</span>元素上的 attribute 被称为插槽 prop。现在在父级作用域中，我们可以使用带值的
       <span class="txt-color-deeppink">&lt;v-slot&gt;</span> 来定义我们提供的插槽 prop 的名字：
-      <br>
+      <br />
       <img src="~@/assets/img/note/slot/slot7.png" alt />
 
       <p>
@@ -59,8 +58,6 @@
       </p>
       <i>于 2020-5-10 00:19</i>
     </div>
-      </b-col>
-    </b-row>
   </div>
 </template>
 
@@ -70,7 +67,7 @@ export default {};
 
 <style lang="scss" scoped>
 @import "~@/assets/css/note.scss";
-.imgdv {
-  overflow: scroll;
+.conten-center-left{
+  overflow:scroll;
 }
 </style>
