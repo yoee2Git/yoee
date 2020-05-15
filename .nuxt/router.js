@@ -3,13 +3,12 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _6f942219 = () => interopDefault(import('../pages/note.vue' /* webpackChunkName: "pages/note" */))
-const _488d2924 = () => interopDefault(import('../pages/notes/Git常用命令速查表.vue' /* webpackChunkName: "pages/notes/Git常用命令速查表" */))
-const _ee373b32 = () => interopDefault(import('../pages/notes/Middleware.vue' /* webpackChunkName: "pages/notes/Middleware" */))
-const _272c8030 = () => interopDefault(import('../pages/notes/Vue中的nextTick.vue' /* webpackChunkName: "pages/notes/Vue中的nextTick" */))
-const _7c873b9a = () => interopDefault(import('../pages/notes/vue插槽-vslot.vue' /* webpackChunkName: "pages/notes/vue插槽-vslot" */))
-const _13d02630 = () => interopDefault(import('../pages/notes/vue生命周期钩子函数.vue' /* webpackChunkName: "pages/notes/vue生命周期钩子函数" */))
-const _2971a88a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _72706d23 = () => interopDefault(import('../pages/note.vue' /* webpackChunkName: "pages/note" */))
+const _289b7778 = () => interopDefault(import('../pages/notes/Git常用命令速查表.vue' /* webpackChunkName: "pages/notes/Git常用命令速查表" */))
+const _5473231e = () => interopDefault(import('../pages/notes/Middleware.vue' /* webpackChunkName: "pages/notes/Middleware" */))
+const _632f9b66 = () => interopDefault(import('../pages/notes/vue生命周期钩子函数.vue' /* webpackChunkName: "pages/notes/vue生命周期钩子函数" */))
+const _7406aa69 = () => interopDefault(import('../pages/notes/vue项目中使用markdown.vue' /* webpackChunkName: "pages/notes/vue项目中使用markdown" */))
+const _43f441f1 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -29,31 +28,27 @@ export const routerOptions = {
 
   routes: [{
     path: "/note",
-    component: _6f942219,
+    component: _72706d23,
     name: "note"
   }, {
     path: "/notes/Git常用命令速查表",
-    component: _488d2924,
+    component: _289b7778,
     name: "notes-Git常用命令速查表"
   }, {
     path: "/notes/Middleware",
-    component: _ee373b32,
+    component: _5473231e,
     name: "notes-Middleware"
   }, {
-    path: "/notes/Vue中的nextTick",
-    component: _272c8030,
-    name: "notes-Vue中的nextTick"
-  }, {
-    path: "/notes/vue插槽-vslot",
-    component: _7c873b9a,
-    name: "notes-vue插槽-vslot"
-  }, {
     path: "/notes/vue生命周期钩子函数",
-    component: _13d02630,
+    component: _632f9b66,
     name: "notes-vue生命周期钩子函数"
   }, {
+    path: "/notes/vue项目中使用markdown",
+    component: _7406aa69,
+    name: "notes-vue项目中使用markdown"
+  }, {
     path: "/",
-    component: _2971a88a,
+    component: _43f441f1,
     name: "index"
   }],
 

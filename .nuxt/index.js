@@ -11,8 +11,9 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_bootstrapvue_1cff9fb2 from 'nuxt_plugin_bootstrapvue_1cff9fb2' // Source: ./bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_axios_4195f483 from 'nuxt_plugin_axios_4195f483' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_5b0d40bc from 'nuxt_plugin_bootstrapvue_5b0d40bc' // Source: ./bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_axios_44723f8d from 'nuxt_plugin_axios_44723f8d' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_vuemavoneditor_e5e1de58 from 'nuxt_plugin_vuemavoneditor_e5e1de58' // Source: ../plugins/vue-mavon-editor (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -151,12 +152,16 @@ async function createApp (ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_bootstrapvue_1cff9fb2 === 'function') {
-    await nuxt_plugin_bootstrapvue_1cff9fb2(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_5b0d40bc === 'function') {
+    await nuxt_plugin_bootstrapvue_5b0d40bc(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_4195f483 === 'function') {
-    await nuxt_plugin_axios_4195f483(app.context, inject)
+  if (typeof nuxt_plugin_axios_44723f8d === 'function') {
+    await nuxt_plugin_axios_44723f8d(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_vuemavoneditor_e5e1de58 === 'function') {
+    await nuxt_plugin_vuemavoneditor_e5e1de58(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

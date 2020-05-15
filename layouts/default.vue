@@ -9,7 +9,9 @@
         </div>
       </b-navbar-nav>
     </b-navbar>
-    <nuxt />
+    <transition name="component-fade">
+      <nuxt />
+    </transition>
     <b-container fluid class="ft">
       <b-row>
       <b-col>
@@ -24,6 +26,19 @@
 </template>
 
 <style lang="scss" scoped>
+.content{
+  overflow: scroll;
+}
+
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: all .5s;
+}
+.component-fade-enter, .component-fade-leave-to
+/* .list-leave-active for below version 2.1.8 */ {
+  opacity: 0;
+  // transform: translateY(30px);
+}
+
 .roter-to{
   display: flex;
   margin-left: 6rem;

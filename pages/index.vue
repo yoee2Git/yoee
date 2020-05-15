@@ -1,47 +1,47 @@
 <template>
   <b-container fluid class="bv-example-row">
     <b-row class="mb-12">
-      <b-col sm="5" md="4" lg="4" xl="3" class="p-3">
+      <b-col sm="12" md="5" lg="4" xl="3" class="p-3">
         <b-col>
           <b-img rounded src="~@/assets/img/me.png" fluid alt="Fluid image"></b-img>
         </b-col>
         <b-list-group class="info">
           <b-list-group-item button>
             <b-row class="info-item">
-              <b-col>Name:</b-col>
-              <b-col>Yoee</b-col>
+              <b-col sm="4">Name:</b-col>
+              <b-col sm="8">Yoee</b-col>
             </b-row>
           </b-list-group-item>
           <b-list-group-item button>
             <b-row class="info-item">
-              <b-col>Eamli:</b-col>
-              <b-col>yoeex@outlook.com</b-col>
+              <b-col sm="4">Eamli:</b-col>
+              <b-col sm="8">yoeex@outlook.com</b-col>
             </b-row>
           </b-list-group-item>
           <b-list-group-item button>
             <b-row class="info-item">
-              <b-col>Github:</b-col>
-              <b-col>
+              <b-col sm="4">Github:</b-col>
+              <b-col sm="8">
                 <b-link href="https://github.com/yoee2Git">github.com/yoee2Git</b-link>
               </b-col>
             </b-row>
           </b-list-group-item>
           <b-list-group-item button>
             <b-row class="info-item">
-              <b-col>TEL:</b-col>
-              <b-col>19920090852</b-col>
+              <b-col sm="4">TEL:</b-col>
+              <b-col sm="8">19920090852</b-col>
             </b-row>
           </b-list-group-item>
           <b-list-group-item button>
             <b-row class="info-item">
-              <b-col>Wechart:</b-col>
-              <b-col>Hiyoee</b-col>
+              <b-col sm="4">Wechart:</b-col>
+              <b-col sm="8">Hiyoee</b-col>
             </b-row>
             <b-row></b-row>
           </b-list-group-item>
         </b-list-group>
       </b-col>
-      <b-col class="ml-auto p-3 bgc" sm="7" md="8" lg="8" xl="9">
+      <b-col class="ml-auto p-3 bgc" sm="12" md="7" lg="8" xl="9">
         <b-jumbotron header="杨一" lead=":平平凡凡普通人,简简单单快活人!">
           <b-container class="bv-example-row content-info">
             <b-row align-h="end" class="content-info-item">
@@ -72,7 +72,7 @@
                 href="#"
                 squared
                 variant="info"
-                v-b-popover.hover.right="'Hi 这是我的邮箱连接地址'"
+                v-b-popover.hover.right="'Hi 这是关于我的页面'"
               >About</b-button>
             </b-row>
           </b-container>
@@ -95,7 +95,7 @@ export default {
 .info {
   margin-top: 2rem;
   .info-item {
-    height: 30px;
+    height: 45px;
   }
 }
 .bgc {

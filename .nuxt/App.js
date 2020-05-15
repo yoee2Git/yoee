@@ -10,9 +10,9 @@ import {
 
 import NuxtLoading from './components/nuxt-loading.vue'
 
-import '../node_modules/_bootstrap@4.4.1@bootstrap/dist/css/bootstrap.css'
+import '../node_modules/_bootstrap@4.5.0@bootstrap/dist/css/bootstrap.css'
 
-import '../node_modules/_bootstrap-vue@2.13.1@bootstrap-vue/dist/bootstrap-vue.css'
+import '../node_modules/_bootstrap-vue@2.14.0@bootstrap-vue/dist/bootstrap-vue.css'
 
 import _6f6c098b from '../layouts/default.vue'
 
