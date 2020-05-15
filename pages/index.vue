@@ -69,11 +69,12 @@
             <b-row align-h="center">
               <b-button
                 class="meil-btn"
-                href="#"
+                href="/about"
                 squared
                 variant="info"
                 v-b-popover.hover.right="'Hi 这是关于我的页面'"
               >About</b-button>
+              <!-- <nuxt-link tag="b-button" to="/about"></nuxt-link> -->
             </b-row>
           </b-container>
         </b-jumbotron>

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _243c672c = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
 const _72706d23 = () => interopDefault(import('../pages/note.vue' /* webpackChunkName: "pages/note" */))
 const _289b7778 = () => interopDefault(import('../pages/notes/Git常用命令速查表.vue' /* webpackChunkName: "pages/notes/Git常用命令速查表" */))
 const _005ca464 = () => interopDefault(import('../pages/notes/JavaScript继承.vue' /* webpackChunkName: "pages/notes/JavaScript继承" */))
@@ -30,6 +31,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/about",
+    component: _243c672c,
+    name: "about"
+  }, {
     path: "/note",
     component: _72706d23,
     name: "note"
