@@ -1,15 +1,11 @@
 *{
-  margin: .5rem;
+  margin:1.5rem 0;
+}
+.content{
+  overflow: scroll;
 }
 h1,h2,h3,h4,h5,h6{
   margin: 1rem .6rem 0rem 1.6rem;
-}
-
-.center-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: scroll;
 }
 
 .txt-color-deeppink{
@@ -19,14 +15,16 @@ h1,h2,h3,h4,h5,h6{
 .code{
   text-indent: 2rem;
   margin: 1rem 0rem;
+  width: 40rem;
 
   padding: 1rem 1rem 1rem 1.5rem;
   background-color: #eee;
   border-left: .4rem solid red;
 }
 
-.dv{
-  padding: 2rem;
-  margin: 1rem;
-  background-color: #eee;
+img{
+  overflow: scroll;
+}
+p{
+  width: 40rem;
 }

@@ -10,7 +10,9 @@
       </b-navbar-nav>
     </b-navbar>
     <transition name="component-fade">
+      <keep-alive>
       <nuxt />
+      </keep-alive>
     </transition>
     <b-container fluid class="ft">
       <b-row>
@@ -28,6 +30,8 @@
 <style lang="scss" scoped>
 .content{
   overflow: scroll;
+  width: 100%;
+  height: 100%;
 }
 
 .component-fade-enter-active, .component-fade-leave-active {
@@ -45,10 +49,11 @@
 }
 
 .ft{
-  margin-top:10rem;
-  background-color: #ddd;
+  margin-top:5rem;
+  background-color: rgb(248, 248, 248);
   padding: 1.5rem 2rem;
   text-align: center;
+  bottom: 0;
 
   bottom: 0;
   .col{

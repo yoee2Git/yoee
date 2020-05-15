@@ -1,7 +1,7 @@
 <template>
   <div class="mavonEditor">
     <no-ssr>
-      <mavon-editor :toolbars="markdownOption" v-model="c" />
+      <mavon-editor :toolbars="markdownOption" v-model="c" :a='a'/>
     </no-ssr>
   </div>
 </template>
@@ -46,7 +46,6 @@ export default {
         // ishljs: true
       },
       c: `  ## mavonEditor 基于Vue的markdown编辑器
-
         Install mavon-editor (安装)
 
         $ npm install mavon-editor --save
@@ -118,7 +117,8 @@ export default {
           height: 100%;
         }
         </style>
-      `
+      `,
+      a:''
     };
   }
 };
