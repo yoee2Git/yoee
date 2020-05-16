@@ -7,6 +7,8 @@
             <li class="h-item"><nuxt-link to="notes/vue生命周期钩子函数">vue生命周期钩子函数</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/vue项目中使用markdown">vue项目中使用markdown</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/Middleware">Middleware</nuxt-link></li>
+            <li class="h-item"><nuxt-link to="notes/JavaScript防抖和节流">JavaScript防抖和节流</nuxt-link></li>
+            <li class="h-item"><nuxt-link to="notes/前端面试之彻底搞懂this指向">前端面试之彻底搞懂this指向</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/JavaScript继承">JavaScript继承</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/vuex之Mutation">vuex之Mutation</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/vuex之Action">vuex之Action</nuxt-link></li>

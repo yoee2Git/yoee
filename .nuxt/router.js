@@ -7,11 +7,13 @@ const _243c672c = () => interopDefault(import('../pages/about.vue' /* webpackChu
 const _72706d23 = () => interopDefault(import('../pages/note.vue' /* webpackChunkName: "pages/note" */))
 const _289b7778 = () => interopDefault(import('../pages/notes/Git常用命令速查表.vue' /* webpackChunkName: "pages/notes/Git常用命令速查表" */))
 const _005ca464 = () => interopDefault(import('../pages/notes/JavaScript继承.vue' /* webpackChunkName: "pages/notes/JavaScript继承" */))
+const _30ba3eaa = () => interopDefault(import('../pages/notes/JavaScript防抖和节流.vue' /* webpackChunkName: "pages/notes/JavaScript防抖和节流" */))
 const _5473231e = () => interopDefault(import('../pages/notes/Middleware.vue' /* webpackChunkName: "pages/notes/Middleware" */))
 const _3d504d80 = () => interopDefault(import('../pages/notes/vuex之Action.vue' /* webpackChunkName: "pages/notes/vuex之Action" */))
 const _eb67309a = () => interopDefault(import('../pages/notes/vuex之Mutation.vue' /* webpackChunkName: "pages/notes/vuex之Mutation" */))
 const _632f9b66 = () => interopDefault(import('../pages/notes/vue生命周期钩子函数.vue' /* webpackChunkName: "pages/notes/vue生命周期钩子函数" */))
 const _7406aa69 = () => interopDefault(import('../pages/notes/vue项目中使用markdown.vue' /* webpackChunkName: "pages/notes/vue项目中使用markdown" */))
+const _627cb8ad = () => interopDefault(import('../pages/notes/前端面试之彻底搞懂this指向.vue' /* webpackChunkName: "pages/notes/前端面试之彻底搞懂this指向" */))
 const _43f441f1 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -47,6 +49,10 @@ export const routerOptions = {
     component: _005ca464,
     name: "notes-JavaScript继承"
   }, {
+    path: "/notes/JavaScript防抖和节流",
+    component: _30ba3eaa,
+    name: "notes-JavaScript防抖和节流"
+  }, {
     path: "/notes/Middleware",
     component: _5473231e,
     name: "notes-Middleware"
@@ -66,6 +72,10 @@ export const routerOptions = {
     path: "/notes/vue项目中使用markdown",
     component: _7406aa69,
     name: "notes-vue项目中使用markdown"
+  }, {
+    path: "/notes/前端面试之彻底搞懂this指向",
+    component: _627cb8ad,
+    name: "notes-前端面试之彻底搞懂this指向"
   }, {
     path: "/",
     component: _43f441f1,
