@@ -2,7 +2,7 @@
   <div class="content">
     <b-navbar type="dark" variant="dark">
       <b-navbar-nav>
-        <b-navbar-brand href="#">YOEE</b-navbar-brand>
+        <b-navbar-brand href="/">YOEE</b-navbar-brand>
         <div class="roter-to">
           <b-nav-item to="/">Home</b-nav-item>
           <b-nav-item to="/note">Note</b-nav-item>
