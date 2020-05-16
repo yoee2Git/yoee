@@ -76,8 +76,8 @@ export default {
     onReset(evt) {
       evt.preventDefault();
       // Reset our form values
-      this.form.title = "";
-      this.form.text = "";
+      this.ruleForm.title = "";
+      this.ruleForm.desc = "";
       // Trick to reset/clear native browser form validation state
       this.show = false;
       this.$nextTick(() => {
