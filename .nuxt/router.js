@@ -8,7 +8,9 @@ const _72706d23 = () => interopDefault(import('../pages/note.vue' /* webpackChun
 const _289b7778 = () => interopDefault(import('../pages/notes/Git常用命令速查表.vue' /* webpackChunkName: "pages/notes/Git常用命令速查表" */))
 const _005ca464 = () => interopDefault(import('../pages/notes/JavaScript继承.vue' /* webpackChunkName: "pages/notes/JavaScript继承" */))
 const _30ba3eaa = () => interopDefault(import('../pages/notes/JavaScript防抖和节流.vue' /* webpackChunkName: "pages/notes/JavaScript防抖和节流" */))
+const _09ffab40 = () => interopDefault(import('../pages/notes/JS运算符优先级.vue' /* webpackChunkName: "pages/notes/JS运算符优先级" */))
 const _5473231e = () => interopDefault(import('../pages/notes/Middleware.vue' /* webpackChunkName: "pages/notes/Middleware" */))
+const _6e88010e = () => interopDefault(import('../pages/notes/Nginx基础入门、安装、配置.vue' /* webpackChunkName: "pages/notes/Nginx基础入门、安装、配置" */))
 const _3d504d80 = () => interopDefault(import('../pages/notes/vuex之Action.vue' /* webpackChunkName: "pages/notes/vuex之Action" */))
 const _eb67309a = () => interopDefault(import('../pages/notes/vuex之Mutation.vue' /* webpackChunkName: "pages/notes/vuex之Mutation" */))
 const _632f9b66 = () => interopDefault(import('../pages/notes/vue生命周期钩子函数.vue' /* webpackChunkName: "pages/notes/vue生命周期钩子函数" */))
@@ -53,9 +55,17 @@ export const routerOptions = {
     component: _30ba3eaa,
     name: "notes-JavaScript防抖和节流"
   }, {
+    path: "/notes/JS运算符优先级",
+    component: _09ffab40,
+    name: "notes-JS运算符优先级"
+  }, {
     path: "/notes/Middleware",
     component: _5473231e,
     name: "notes-Middleware"
+  }, {
+    path: "/notes/Nginx基础入门、安装、配置",
+    component: _6e88010e,
+    name: "notes-Nginx基础入门、安装、配置"
   }, {
     path: "/notes/vuex之Action",
     component: _3d504d80,

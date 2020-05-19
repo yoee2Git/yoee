@@ -40,8 +40,8 @@
           </b-form-group>
 
           <b-button
-            v-b-popover.hover.top="'当您按下发送键的瞬间,就能收到您的邮件,不用怀疑!'"
-            title="❤"
+            v-b-popover.hover.top="'目前生产环境无法收发邮件!我尽快修复BUG!'"
+            title="蓝瘦.😿!"
             type="submit"
             variant="primary"
           >发送</b-button>

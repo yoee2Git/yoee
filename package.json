@@ -1,7 +1,7 @@
 {
   "name": "yoee",
   "version": "1.0.0",
-  "description": "杨一的博客 Yoee",
+  "description": "杨一的博客",
   "author": "yoee",
   "private": true,
   "scripts": {
@@ -20,6 +20,7 @@
     "koa": "^2.6.2",
     "koa-bodyparser": "^4.3.0",
     "koa-router": "^8.0.8",
+    "marked": "^1.1.0",
     "mavon-editor": "^2.9.0",
     "nodemailer": "^6.4.6",
     "nuxt": "^2.0.0",
@@ -30,11 +31,5 @@
     "node-sass": "^4.14.1",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2"
-  },
-    "config": {
-    "nuxt": {
-      "host": "127.0.0.1",
-      "port": "8080"
-    }
   }
 }

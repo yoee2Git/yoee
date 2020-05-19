@@ -92,6 +92,6 @@ export default {
 @import "~@/assets/css/note.scss";
 
 img {
-  width: 40rem;
+  width: 35rem;
 }
 </style>
