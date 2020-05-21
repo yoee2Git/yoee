@@ -10,13 +10,13 @@
         <br />
         <h4>一. 认识防抖和节流</h4>
         <h6>1.1. 对防抖和节流的认识</h6>
-        <p>防抖和节流的概念其实最早并不是出现在软件工程中，防抖是出现在电子元件中，节流出现在流体流动中</p>
+        <span>防抖和节流的概念其实最早并不是出现在软件工程中，防抖是出现在电子元件中，节流出现在流体流动中</span>
         <ul>
           <li>而JavaScript是事件驱动的，大量的操作会触发事件，加入到事件队列中处理。</li>
           <li>而对于某些频繁的事件处理会造成性能的损耗，我们就可以通过防抖和节流来限制事件频繁的发生；</li>
         </ul>
-        <p>防抖和节流函数目前已经是前端实际开发中两个非常重要的函数，也是面试经常被问到的面试题。</p>
-        <p>但是很多前端开发者面对这两个功能，有点摸不着头脑：</p>
+        <span>防抖和节流函数目前已经是前端实际开发中两个非常重要的函数，也是面试经常被问到的面试题。</span>
+        <span>但是很多前端开发者面对这两个功能，有点摸不着头脑：</span>
         <ul>
           <li>某些开发者根本无法区分防抖和节流有什么区别（面试经常会被问到）；</li>
           <li>某些开发者可以区分，但是不知道如何应用；</li>
@@ -303,11 +303,11 @@ export default {
 @import "~@/assets/css/note.scss";
 
 img {
-  width: 35rem;
+  max-width: 35rem;
 }
 h4 {
   margin-left: 0;
-  width: 35rem;
+  max-width: 35rem;
   height: 3rem;
   line-height: 3rem;
   background-color: rgb(255, 123, 0);
@@ -315,5 +315,10 @@ h4 {
 }
 ul>li{
   max-width: 30rem;
+}
+p{
+  max-width: 30rem;
+  overflow-x: auto;
+  display: inline-block;
 }
 </style>

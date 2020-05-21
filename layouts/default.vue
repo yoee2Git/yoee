@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <b-navbar type="dark" variant="dark">
+    <b-navbar type="light" variant="light">
       <b-navbar-nav>
         <b-navbar-brand href="/">YOEE</b-navbar-brand>
         <div class="roter-to">
