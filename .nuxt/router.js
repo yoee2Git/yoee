@@ -13,6 +13,7 @@ const _5473231e = () => interopDefault(import('../pages/notes/Middleware.vue' /*
 const _6e88010e = () => interopDefault(import('../pages/notes/Nginx基础入门、安装、配置.vue' /* webpackChunkName: "pages/notes/Nginx基础入门、安装、配置" */))
 const _3d504d80 = () => interopDefault(import('../pages/notes/vuex之Action.vue' /* webpackChunkName: "pages/notes/vuex之Action" */))
 const _eb67309a = () => interopDefault(import('../pages/notes/vuex之Mutation.vue' /* webpackChunkName: "pages/notes/vuex之Mutation" */))
+const _a405c994 = () => interopDefault(import('../pages/notes/Vuex是什么.vue' /* webpackChunkName: "pages/notes/Vuex是什么" */))
 const _632f9b66 = () => interopDefault(import('../pages/notes/vue生命周期钩子函数.vue' /* webpackChunkName: "pages/notes/vue生命周期钩子函数" */))
 const _7406aa69 = () => interopDefault(import('../pages/notes/vue项目中使用markdown.vue' /* webpackChunkName: "pages/notes/vue项目中使用markdown" */))
 const _627cb8ad = () => interopDefault(import('../pages/notes/前端面试之彻底搞懂this指向.vue' /* webpackChunkName: "pages/notes/前端面试之彻底搞懂this指向" */))
@@ -74,6 +75,10 @@ export const routerOptions = {
     path: "/notes/vuex之Mutation",
     component: _eb67309a,
     name: "notes-vuex之Mutation"
+  }, {
+    path: "/notes/Vuex是什么",
+    component: _a405c994,
+    name: "notes-Vuex是什么"
   }, {
     path: "/notes/vue生命周期钩子函数",
     component: _632f9b66,

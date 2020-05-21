@@ -10,6 +10,7 @@
             <li class="h-item"><nuxt-link to="notes/JS运算符优先级">JS运算符优先级</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/前端面试之彻底搞懂this指向">前端面试之彻底搞懂this指向</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/JavaScript继承">JavaScript继承</nuxt-link></li>
+            <li class="h-item"><nuxt-link to="notes/Vuex是什么">Vuex 是什么？</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/vuex之Mutation">vuex之Mutation</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/vuex之Action">vuex之Action</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/Git常用命令速查表">Git 常用命令速查表</nuxt-link></li>
