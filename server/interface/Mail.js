@@ -1,4 +1,3 @@
-  
 const nodemailer = require("nodemailer");
 const Router = require('koa-router');
 
@@ -7,7 +6,9 @@ let router = new Router({
 })
 
 router.post('/sendEmail', async (ctx) => {
-
+  ctx.body = {
+    code: 0
+  }
   const { title, email, desc } = ctx.request.body;
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
@@ -23,14 +24,14 @@ router.post('/sendEmail', async (ctx) => {
   // send mail with defined transport object
   await transporter.sendMail({
     from: "381945650@qq.com", // sender address
-    to: "yoeex@outlook.com", // list of receivers
+    to: "helloyoee@aliyun.com", // list of receivers
     // subject: ctx.request.body.title, // Subject line
     subject: title,
     // text: ctx.request.body.text // plain text body
     text: `${email}
 
     对我说:
-    ========================================================================================================>
+    ===========================>
 
     ${desc}`
   });

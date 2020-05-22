@@ -67,11 +67,13 @@ export default {
   methods: {
     onSubmit(evt) {
       evt.preventDefault();
-      this.$axios.post("/about/sendEmail", {
+      let status =  this.$axios.post("/about/sendEmail", {
         title: this.ruleForm.title,
         email: this.ruleForm.email,
-        desc: this.ruleForm.desc
+        desc: this.ruleForm.desc,
       });
+      this.ruleForm.title = "";
+      this.ruleForm.desc = "";
     },
     onReset(evt) {
       evt.preventDefault();

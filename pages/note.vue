@@ -13,6 +13,9 @@
             <li class="h-item"><nuxt-link to="notes/Vuex是什么">Vuex 是什么？</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/vuex之Mutation">vuex之Mutation</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/vuex之Action">vuex之Action</nuxt-link></li>
+            <li class="h-item"><nuxt-link to="notes/html/HTML5和HTML4究竟有哪些不同">HTML5和HTML4究竟有哪些不同</nuxt-link></li>
+            <li class="h-item"><nuxt-link to="notes/html/src和href的区别">src和href的区别</nuxt-link></li>
+            <li class="h-item"><nuxt-link to="notes/html/script标签中defer和async的区别">script标签中defer和async的区别</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/Git常用命令速查表">Git 常用命令速查表</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/Nginx基础入门、安装、配置">Nginx基础入门、安装、配置</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/vue项目中使用markdown">vue项目中使用markdown</nuxt-link></li>

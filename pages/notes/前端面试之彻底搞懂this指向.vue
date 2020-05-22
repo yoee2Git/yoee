@@ -2,9 +2,8 @@
   <b-container fluid class="bv-example-row content">
     <b-row>
       <!-- <b-col sm="6" offset-sm="0" md="6" offset-md="3" lg="6" offset-lg="5" xl="6" offset-xl="5"> -->
-      <b-col sm="0" md="2" lg="2" xl="3"></b-col>
-
-      <b-col sm="12" md="8" lg="8" xl="6">
+      <b-col sm="0" md="2" lg="2" xl="4"></b-col>
+      <b-col sm="12" md="8" lg="7" xl="5">
         <h2>前端面试之彻底搞懂this指向</h2>
         <hr />
         <br />
