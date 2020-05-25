@@ -19,7 +19,7 @@ async function start () {
   const nuxt = new Nuxt(config)
 
   const {
-    host = process.env.HOST || '127.0.0.1',
+    host = process.env.HOST || '47.114.87.244',
     port = process.env.PORT || 3000
   } = nuxt.options.server
 
@@ -39,7 +39,10 @@ async function start () {
     await builder.build()
   }
 
-
+  app.use(async (ctx, next) => {
+    ctx.set('Access-Control-Allow-Origin', '*');
+    await next();
+   });
   app.use((ctx) => {
     ctx.status = 200
     ctx.respond = false // Bypass Koa's built-in response handling

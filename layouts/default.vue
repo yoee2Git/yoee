@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content" ref="content">
     <b-navbar type="light" variant="light">
       <b-navbar-nav>
         <b-navbar-brand href="/">YOEE</b-navbar-brand>
@@ -12,8 +12,13 @@
     <transition name="component-fade">
       <keep-alive>
       <nuxt />
+
       </keep-alive>
     </transition>
+    <a href="#" class="back-top">
+      <img src="~@/assets/img/backtop/backTop.png" alt="">
+    </a>
+    {{ $refs.content }}
     <b-container fluid class="ft">
       <b-row>
       <b-col>
@@ -23,9 +28,18 @@
       </b-col>
     </b-row>
     </b-container>
-    
   </div>
 </template>
+
+<script>
+export default {
+  date(){
+    return{
+      
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .content{
@@ -49,9 +63,9 @@
 }
 
 .ft{
-  margin-top:5rem;
+  margin-top:8rem;
   background-color: rgb(248, 248, 248);
-  padding: 1.5rem 2rem;
+  padding: .8rem 1rem;
   text-align: center;
   bottom: 0;
 
@@ -60,5 +74,24 @@
     padding: 0;
     margin: 0;
   }
+  a{
+    font-size: 12px;
+    color: #666;
+  }
 }
+.back-top{
+  position: fixed;
+  bottom: 2rem;
+  right: 2.5rem;
+  
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(221, 221, 221, .8);
+  img{
+    width: 100%;
+  }
+}
+
 </style>
