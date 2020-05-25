@@ -53,8 +53,6 @@
 </template>
 
 <script>
-// import lazyloadImg form 'vue-lazyload';
-const iazyloadImg = require('vue-lazyload');
 export default {
   data() {
     return {

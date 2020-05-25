@@ -25,23 +25,16 @@
       </b-col>
       <b-col sm="8" md="9" lg="9" xl="10">
         <b-carousel id="carousel-fade" style="text-shadow: 0px 0px 2px #000" fade indicators>
-          <!-- <img :v-lazy='imgSrc[0]' alt=""> -->
           <b-carousel-slide img-src="~@/assets/img/note/noteweiper-1.png"></b-carousel-slide>
           <b-carousel-slide img-src="~@/assets/img/note/noteweiper-3.png"></b-carousel-slide>
         </b-carousel>
       </b-col>
     </b-row>
-    
   </b-container>
 </template>
 
 <script>
 export default {
-  data(){
-    return {
-      imgSrc: ['~@/assets/img/note/noteweiper-1.png','~@/assets/img/note/noteweiper-3.png']
-    }
-  }
 };
 </script>
 
