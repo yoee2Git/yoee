@@ -1,6 +1,6 @@
 <template>
   <div class="content" ref="content">
-    <b-navbar type="light" variant="light">
+    <b-navbar type="light" variant="light" class="nav">
       <b-navbar-nav>
         <b-navbar-brand href="/">YOEE</b-navbar-brand>
         <div class="roter-to">
@@ -9,16 +9,16 @@
         </div>
       </b-navbar-nav>
     </b-navbar>
-    <transition name="component-fade">
-      <keep-alive>
-      <nuxt />
-
-      </keep-alive>
-    </transition>
+    <div class="main">
+        <transition name="component-fade">
+          <keep-alive>
+          <nuxt />
+          </keep-alive>
+        </transition>
+    </div>
     <a href="#" class="back-top">
       <img src="~@/assets/img/backtop/backTop.png" alt="">
     </a>
-    {{ $refs.content }}
     <b-container fluid class="ft">
       <b-row>
       <b-col>
@@ -46,8 +46,18 @@ export default {
   overflow: scroll;
   width: 100%;
   height: 100%;
+  .navbar{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 }
 
+.main{
+  margin-top: 2.5rem;
+}
 .component-fade-enter-active, .component-fade-leave-active {
   transition: all .5s;
 }
@@ -81,12 +91,13 @@ export default {
 }
 .back-top{
   position: fixed;
-  bottom: 2rem;
-  right: 2.5rem;
+  bottom: 1.8rem;
+  right: 2rem;
+  z-index: 99;
   
 
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: rgba(221, 221, 221, .8);
   img{
