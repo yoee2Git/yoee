@@ -17,10 +17,10 @@ module.exports = {
 			user: 'root',
 			host: '47.114.87.244',
 			ref: 'origin/master',
-			repo: 'https://github.com/yoee2Git/yoee.git',
+			repo: 'https://gitee.com/yoee/yoee.git',
 			path: '/var/www/yoee',
 			'pre-deploy': 'git fetch --all',
-			'post-deploy': 'cnpm install start deploy.config.js --env production'
+			'post-deploy': 'npm install && npm run build && npm start && pm2 startOrRestart deploy.config.js --env production'
 		}
 	}
 }
