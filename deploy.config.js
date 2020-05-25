@@ -17,7 +17,7 @@ module.exports = {
 			user: 'root',
 			host: '47.114.87.244',
 			ref: 'origin/master',
-			repo: 'https://gitee.com/yoee/yoee.git',
+			repo: 'https://github.com/yoee2Git/yoee.git',
 			path: '/var/www/yoee',
 			'pre-deploy': 'git fetch --all',
 			'post-deploy': 'cnpm install && cnpm run build && cnpm start && pm2 deploy.config.js --env production'
