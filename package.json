@@ -27,8 +27,9 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9",
+    "koa2-cors": "^2.0.6",
     "node-sass": "^4.14.1",
+    "nodemon": "^1.18.9",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2"
   }

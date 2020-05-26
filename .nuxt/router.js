@@ -17,6 +17,7 @@ const _eb67309a = () => interopDefault(import('../pages/notes/vuex之Mutation.vu
 const _632f9b66 = () => interopDefault(import('../pages/notes/vue生命周期钩子函数.vue' /* webpackChunkName: "pages/notes/vue生命周期钩子函数" */))
 const _7406aa69 = () => interopDefault(import('../pages/notes/vue项目中使用markdown.vue' /* webpackChunkName: "pages/notes/vue项目中使用markdown" */))
 const _627cb8ad = () => interopDefault(import('../pages/notes/前端面试之彻底搞懂this指向.vue' /* webpackChunkName: "pages/notes/前端面试之彻底搞懂this指向" */))
+const _3d4fc1b4 = () => interopDefault(import('../pages/notes/当better-scroll遇见Vue.vue' /* webpackChunkName: "pages/notes/当better-scroll遇见Vue" */))
 const _3017475e = () => interopDefault(import('../pages/notes/html/HTML5和HTML4究竟有哪些不同.vue' /* webpackChunkName: "pages/notes/html/HTML5和HTML4究竟有哪些不同" */))
 const _6a15f70e = () => interopDefault(import('../pages/notes/html/script标签中defer和async的区别.vue' /* webpackChunkName: "pages/notes/html/script标签中defer和async的区别" */))
 const _5941ad9d = () => interopDefault(import('../pages/notes/html/src和href的区别.vue' /* webpackChunkName: "pages/notes/html/src和href的区别" */))
@@ -94,6 +95,10 @@ export const routerOptions = {
     path: "/notes/前端面试之彻底搞懂this指向",
     component: _627cb8ad,
     name: "notes-前端面试之彻底搞懂this指向"
+  }, {
+    path: "/notes/当better-scroll遇见Vue",
+    component: _3d4fc1b4,
+    name: "notes-当better-scroll遇见Vue"
   }, {
     path: "/notes/html/HTML5和HTML4究竟有哪些不同",
     component: _3017475e,

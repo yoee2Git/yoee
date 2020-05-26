@@ -72,8 +72,9 @@
         <p class="shell">$  yum -y install nginx</p>
         <h4>检查版本</h4>
         <div class="shell">
-          $ &nbsp&nbsp&nbsp&nbsp nginx -v
-        <br> &nbsp &nbsp &nbsp > &nbsp &nbsp nginx version: nginx/1.14.1
+          $  nginx -v
+        <br> 
+         nginx version: nginx/1.14.1
         </div>
         <p class="code">
           1.CoreModule 核心模块
@@ -87,19 +88,19 @@
         <p class="shell">
           terminal:
           <br>
-          &nbsp &nbsp$ &nbsp &nbsp nginx -v   //查看版本
+           nginx -v   //查看版本
           <br>
-          &nbsp &nbsp$ &nbsp &nbsp nginx    //启动nginx
+           nginx    //启动nginx
           <br>
-          &nbsp &nbsp$ &nbsp &nbsp pkll -9 nginx    //按名杀死nginx进程
+           pkll -9 nginx    //按名杀死nginx进程
           <br>
-          &nbsp &nbsp$ &nbsp &nbsp nginx -t     //查看nginx当前状态
+           nginx -t     //查看nginx当前状态
           <br>
-          &nbsp &nbsp$ &nbsp &nbsp nginx -s start     //启动nginx
+           nginx -s start     //启动nginx
           <br>
-          &nbsp &nbsp$ &nbsp &nbsp nginx -s stop    //停止nginx
+           nginx -s stop    //停止nginx
           <br>
-          &nbsp &nbsp$ &nbsp &nbsp nginx -s reload    //重新启动nginx
+           nginx -s reload    //重新启动nginx
         </p>
         <b-col sm="0" md="2" lg="2" xl="3"></b-col>
         <br />
