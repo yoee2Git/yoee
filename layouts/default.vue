@@ -39,6 +39,11 @@ export default {
   },
   date() {
     return {};
+  },
+  methods:{
+    backtop(){
+      this.$emit('backTop')
+    }
   }
 };
 </script>

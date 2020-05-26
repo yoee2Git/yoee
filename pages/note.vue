@@ -4,7 +4,7 @@
       <b-col sm='4' md="3" lg="3" xl="2">
         <div>
           <ul class="h">
-            <li class="h-item"><nuxt-link to="notes/当better-scroll遇见Vue">当better-scroll遇见Vue及使用事项</nuxt-link></li>
+            <li class="h-item"><nuxt-link to="notes/当better-scroll遇见Vue">better-scroll在Vue中及使用事项</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/vue生命周期钩子函数">vue生命周期钩子函数</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/Middleware">Middleware</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/JavaScript防抖和节流">JavaScript防抖和节流</nuxt-link></li>
