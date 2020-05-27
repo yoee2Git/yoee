@@ -45,7 +45,6 @@
           >发送</b-button>
           <b-button type="reset" variant="danger">重置</b-button>
         </b-form>
-          <span>{{ msg }}</span>
       </b-col>
     </b-row>
   </b-container>
