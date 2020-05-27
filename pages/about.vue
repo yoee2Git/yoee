@@ -14,7 +14,6 @@
             id="input-group-1"
             label="您的邮箱:"
             label-for="input-1"
-            description="请输入您的邮箱地址0.0"
           >
             <b-form-input
               id="input-1"
@@ -24,7 +23,6 @@
               placeholder="Enter email"
             ></b-form-input>
           </b-form-group>
-
           <b-form-group id="input-group-2" label="邮件主题:" label-for="input-2">
             <b-form-input id="input-2" v-model="ruleForm.title" required placeholder="主题"></b-form-input>
           </b-form-group>
@@ -40,13 +38,14 @@
           </b-form-group>
 
           <b-button
-            v-b-popover.hover.top="'目前生产环境无法收发邮件!我尽快修复BUG!'"
-            title="蓝瘦.😿!"
+            v-b-popover.hover.top="'我会尽快回复您'"
+            title="H!"
             type="submit"
             variant="primary"
           >发送</b-button>
           <b-button type="reset" variant="danger">重置</b-button>
         </b-form>
+          <span>{{ msg }}</span>
       </b-col>
     </b-row>
   </b-container>
@@ -61,19 +60,26 @@ export default {
         title: "",
         desc: ""
       },
-      show: true
+      show: true,
+      msg:''
     };
   },
   methods: {
-    onSubmit(evt) {
+   async onSubmit(evt) {
       evt.preventDefault();
-      let status =  this.$axios.post("/about/sendEmail", {
+      let res = await this.$axios.post("/about/sendEmail", {
         title: this.ruleForm.title,
         email: this.ruleForm.email,
         desc: this.ruleForm.desc,
       });
-      this.ruleForm.title = "";
-      this.ruleForm.desc = "";
+      if(res.status === 200){
+        this.mag = res.data.msg
+      }
+      console.log(res)
+      setTimeout(() => {
+        this.ruleForm.title = "";
+        this.ruleForm.desc = "";
+      })
     },
     onReset(evt) {
       evt.preventDefault();

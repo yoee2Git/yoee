@@ -28,12 +28,6 @@
           </b-list-group-item>
           <b-list-group-item button>
             <b-row class="info-item">
-              <b-col sm="4">TEL:</b-col>
-              <b-col sm="8">19920090852</b-col>
-            </b-row>
-          </b-list-group-item>
-          <b-list-group-item button>
-            <b-row class="info-item">
               <b-col sm="4">Wechat:</b-col>
               <b-col sm="8">Hiyoee</b-col>
             </b-row>

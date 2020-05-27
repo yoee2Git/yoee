@@ -4,6 +4,7 @@
       <b-col sm='4' md="3" lg="3" xl="2">
         <div>
           <ul class="h">
+            <li class="h-item"> <a href="https://juejin.im/post/5eccda59518825431614762e">Linux部署nuxt & koa 项目,使用PM2与nginx(快速,对新手非常友好的笔记)</a></li>
             <li class="h-item"><nuxt-link to="notes/当better-scroll遇见Vue">当better-scroll遇见Vue及使用事项</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/vue生命周期钩子函数">vue生命周期钩子函数</nuxt-link></li>
             <li class="h-item"><nuxt-link to="notes/Middleware">Middleware</nuxt-link></li>
