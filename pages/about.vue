@@ -67,7 +67,7 @@ export default {
   methods: {
     onSubmit(evt) {
       evt.preventDefault();
-      let status =  this.$axios.post("yoees.com/about/sendEmail", {
+      let status =  this.$axios.post("/about/sendEmail", {
         title: this.ruleForm.title,
         email: this.ruleForm.email,
         desc: this.ruleForm.desc,
