@@ -49,6 +49,7 @@ module.exports = {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    baseURL: 'http://yoees.com'
   },
   /*
   ** Build configuration
