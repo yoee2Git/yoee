@@ -14,7 +14,6 @@
             id="input-group-1"
             label="您的邮箱:"
             label-for="input-1"
-            description="请输入您的邮箱地址0.0"
           >
             <b-form-input
               id="input-1"
@@ -24,7 +23,6 @@
               placeholder="Enter email"
             ></b-form-input>
           </b-form-group>
-
           <b-form-group id="input-group-2" label="邮件主题:" label-for="input-2">
             <b-form-input id="input-2" v-model="ruleForm.title" required placeholder="主题"></b-form-input>
           </b-form-group>
@@ -40,8 +38,8 @@
           </b-form-group>
 
           <b-button
-            v-b-popover.hover.top="'❤ 我会尽快回复您!'"
-            title="Hi"
+            v-b-popover.hover.top="'我会尽快回复您'"
+            title="H!"
             type="submit"
             variant="primary"
           >发送</b-button>
@@ -61,19 +59,26 @@ export default {
         title: "",
         desc: ""
       },
-      show: true
+      show: true,
+      msg:''
     };
   },
   methods: {
-    onSubmit(evt) {
+   async onSubmit(evt) {
       evt.preventDefault();
-      let status =  this.$axios.post("/about/sendEmail", {
+      let res = await this.$axios.post("/about/sendEmail", {
         title: this.ruleForm.title,
         email: this.ruleForm.email,
         desc: this.ruleForm.desc,
       });
-      this.ruleForm.title = "";
-      this.ruleForm.desc = "";
+      if(res.status === 200){
+        this.mag = res.data.msg
+      }
+      console.log(res)
+      setTimeout(() => {
+        this.ruleForm.title = "";
+        this.ruleForm.desc = "";
+      })
     },
     onReset(evt) {
       evt.preventDefault();

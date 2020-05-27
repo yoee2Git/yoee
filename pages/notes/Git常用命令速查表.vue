@@ -23,7 +23,7 @@ export default {};
   justify-content: center;
   align-items: center;
   img{
-    
+    width: 100%;
   }
 }
   .tit{
