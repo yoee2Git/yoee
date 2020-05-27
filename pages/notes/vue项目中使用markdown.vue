@@ -1,7 +1,11 @@
 <template>
   <div class="mavonEditor">
     <no-ssr>
-      <mavon-editor :toolbars="markdownOption" v-model="c" :a='a'/>
+      <mavon-editor :toolbars="markdownOption" v-model="c"/>
+      <mavon-editor @save="saveDoc"
+            @change="updateDoc"
+            ref="editor"
+            v-model="doc"/>
     </no-ssr>
   </div>
 </template>
@@ -9,6 +13,7 @@
 export default {
   data() {
     return {
+      doc: "",
       markdownOption: {
         // bold: true, // 粗体
         // italic: true, // 斜体
@@ -118,9 +123,21 @@ export default {
         }
         </style>
       `,
-      a:''
     };
-  }
+  },
+  methods: {
+        updateDoc(markdown, html) {
+            // 此时会自动将 markdown 和 html 传递到这个方法中
+            console.log("markdown内容: " + markdown);
+            console.log("html内容:" + markdown);
+        },
+        saveDoc(markdown, html) {
+            // 此时会自动将 markdown 和 html 传递到这个方法中
+            console.log("markdown内容:" + markdown);
+            console.log("html内容:" + html);
+            this.doc = markdown
+        }
+    }
 };
 </script>
 

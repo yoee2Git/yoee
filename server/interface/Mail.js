@@ -7,7 +7,8 @@ let router = new Router({
 
 router.post('/sendEmail', async (ctx) => {
   ctx.body = {
-    code: 0
+    code: 0,
+    msg: '邮件发送成功!'
   }
   const { title, email, desc } = ctx.request.body;
   // create reusable transporter object using the default SMTP transport

@@ -40,8 +40,8 @@
           </b-form-group>
 
           <b-button
-            v-b-popover.hover.top="'目前生产环境无法收发邮件!我尽快修复BUG!'"
-            title="蓝瘦.😿!"
+            v-b-popover.hover.top="'❤ 我会尽快回复您!'"
+            title="Hi"
             type="submit"
             variant="primary"
           >发送</b-button>
@@ -67,7 +67,7 @@ export default {
   methods: {
     onSubmit(evt) {
       evt.preventDefault();
-      let status =  this.$axios.post("/about/sendEmail", {
+      let status =  this.$axios.post("yoees.com/about/sendEmail", {
         title: this.ruleForm.title,
         email: this.ruleForm.email,
         desc: this.ruleForm.desc,
