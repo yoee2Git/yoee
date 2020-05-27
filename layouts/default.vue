@@ -5,6 +5,7 @@
           <b-navbar-brand href="/">YOEE</b-navbar-brand>
           <div class="roter-to">
             <b-nav-item to="/">Home</b-nav-item>
+            <b-nav-item to="/about">About</b-nav-item>
             <b-nav-item to="/note">Note</b-nav-item>
           </div>
         </b-navbar-nav>
