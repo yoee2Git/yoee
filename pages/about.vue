@@ -31,6 +31,8 @@
           <br>
           <a href="https://github.com/yoee2Git/meituan.git">!美团 PC(已开发完,暂未上线):https://github.com/yoee2Git/meituan.git</a>
           <br>
+          <a href="http://yoees.com">YOEE(博客 nuxt.js &amp; Koa2):http://yoees.com</a>
+          <hr>
           团队协作/模块化: { Git/Github, Webpack, [了解]Linux, Nginx | pm2(上线部署) }
         </div>
       </b-col>
