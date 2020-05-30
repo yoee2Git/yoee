@@ -7,14 +7,38 @@
         </div>
       </b-col>
     </b-row>
+    <b-row class="info">
+      <b-col md="6" offset-md="3">
+        <h5>前端开始之路:</h5>
+        <p>
+          2018年12月4日，
+          <a href="https://zh.wikipedia.org/zh-hans/Flutter">Flutter</a> 1.0在Flutter Live活动中发布，是该框架的第一个“稳定”版本。(Flutter是一个由谷歌开发的开源移动应用软件开发工具包，用于为Android、iOS、 Windows、Mac、Linux、Google Fuchsia开发应用[5]。)
+        </p>
+        <p>对此是非感兴趣,并决定查阅,学习!</p>
+        <div>
+          近1年半的学习
+          <br />
+          <hr>
+          前端技术栈:{ [熟练] HTML(5),CSS(3) || Sass ,JavaScript/ES6,Vue.js }
+          <br>
+          <a href="http://taobao.yoees.com/">!淘宝首屏(部分):http://taobao.yoees.com/</a>
+          <br>
+          <a href="http://mi.yoees.com/">!小米官网:http://mi.yoees.com/</a>
+          <br>
+          <a href="http://m.meituan.yoees.com/#/">!美团web app:http://m.meituan.yoees.com/#/</a>
+          <hr>
+          后端技术栈:{ [熟悉] Node.js => (Express koa2 nuxt.js) }
+          <br>
+          <a href="https://github.com/yoee2Git/meituan.git">!美团 PC(已开发完,暂未上线):https://github.com/yoee2Git/meituan.git</a>
+          <br>
+          团队协作/模块化: { Git/Github, Webpack, [了解]Linux, Nginx | pm2(上线部署) }
+        </div>
+      </b-col>
+    </b-row>
     <b-row>
       <b-col md="6" offset-md="3">
         <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-          <b-form-group
-            id="input-group-1"
-            label="您的邮箱:"
-            label-for="input-1"
-          >
+          <b-form-group id="input-group-1" label="您的邮箱:" label-for="input-1">
             <b-form-input
               id="input-1"
               v-model="ruleForm.email"
@@ -37,12 +61,7 @@
             ></b-form-textarea>
           </b-form-group>
 
-          <b-button
-            v-b-popover.hover.top="'我会尽快回复您'"
-            title="H!"
-            type="submit"
-            variant="primary"
-          >发送</b-button>
+          <b-button v-b-popover.hover.top="'我会尽快回复您'" title="H!" type="submit" variant="primary">发送</b-button>
           <b-button type="reset" variant="danger">重置</b-button>
         </b-form>
       </b-col>
@@ -60,25 +79,25 @@ export default {
         desc: ""
       },
       show: true,
-      msg:''
+      msg: ""
     };
   },
   methods: {
-   async onSubmit(evt) {
+    async onSubmit(evt) {
       evt.preventDefault();
       let res = await this.$axios.post("/about/sendEmail", {
         title: this.ruleForm.title,
         email: this.ruleForm.email,
-        desc: this.ruleForm.desc,
+        desc: this.ruleForm.desc
       });
-      if(res.status === 200){
-        this.mag = res.data.msg
+      if (res.status === 200) {
+        this.mag = res.data.msg;
       }
-      console.log(res)
+      console.log(res);
       setTimeout(() => {
         this.ruleForm.title = "";
         this.ruleForm.desc = "";
-      })
+      });
     },
     onReset(evt) {
       evt.preventDefault();
@@ -122,6 +141,17 @@ export default {
     background-color: #fff;
     animation: inblock 1s steps(1, end) infinite,
       move 35s steps(16, end) forwards;
+  }
+}
+.info {
+  margin-bottom: 2rem;
+  p {
+    text-indent: 2rem;
+    margin: 1rem 0rem;
+  }
+  a{
+    color: deeppink;
+    margin: 1rem 0rem;
   }
 }
 @keyframes inblock {
