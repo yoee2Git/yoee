@@ -20,7 +20,7 @@ module.exports = {
 			repo: 'https://gitee.com/yoee/yoee.git',
 			path: '/var/www/yoee',
 			'pre-deploy': 'git fetch --all',
-			'post-deploy': 'npm install && npm run build && npm start && pm2 startOrRestart deploy.config.js --env production'
+			'post-deploy': 'cnpm install && cnpm run build && cnpm start && pm2 startOrRestart deploy.config.js --env production'
 		}
 	}
 }
