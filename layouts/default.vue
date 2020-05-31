@@ -1,49 +1,52 @@
 <template>
-    <div class="content" ref="content">
-      <b-navbar type="light" variant="light" class="nav">
-        <b-navbar-nav>
-          <b-navbar-brand href="/">YOEE</b-navbar-brand>
-          <div class="roter-to">
-            <b-nav-item to="/">Home</b-nav-item>
-            <b-nav-item to="/about">About</b-nav-item>
-            <b-nav-item to="/note">Note</b-nav-item>
-          </div>
-        </b-navbar-nav>
-      </b-navbar>
-      
-      <div class="main">
-        <transition name="component-fade">
-          <keep-alive>
-            <nuxt />
-          </keep-alive>
-        </transition>
-      </div>
-      <a href="#" class="back-top">
-        <img src="~@/assets/img/backtop/backTop.png" alt />
-      </a>
-      <b-container fluid class="ft">
-        <b-row>
-          <b-col>
-            <a href="http://beian.miit.gov.cn">Copyright © 2020-2021 YOEE . 黔ICP备20003571号</a>
-          </b-col>
-        </b-row>
-      </b-container>
-    </div>
+  <div class="content" ref="content">
+    <b-navbar type="light" variant="light" class="nav">
+      <b-navbar-nav>
+        <b-navbar-brand href="/">YOEE</b-navbar-brand>
+        <div class="roter-to">
+          <b-nav-item to="/">Home</b-nav-item>
+          <b-nav-item to="/about">About</b-nav-item>
+          <b-nav-item to="/note">Note</b-nav-item>
+        </div>
+      </b-navbar-nav>
+    </b-navbar>
 
+    <div class="main">
+      <transition name="component-fade">
+        <keep-alive>
+          <nuxt />
+        </keep-alive>
+      </transition>
+    </div>
+    <span class="back-top" @click="backtop">
+      <img src="~@/assets/img/backtop/backTop.png" alt />
+    </span>
+    <b-container fluid class="ft">
+      <b-row>
+        <b-col>
+          <a href="http://beian.miit.gov.cn">Copyright © 2020-2021 YOEE . 黔ICP备20003571号</a>
+        </b-col>
+      </b-row>
+    </b-container>
+  </div>
 </template>
 
 <script>
-import scroll from '@/components/scroll.vue'
+import scroll from "@/components/scroll.vue";
 export default {
-  components:{
+  components: {
     scroll
   },
   date() {
     return {};
   },
-  methods:{
-    backtop(){
-      this.$emit('backTop')
+  methods: {
+    backtop() {
+      const c = document.documentElement.scrollTop || document.body.scrollTop;
+      if (c > 0) {
+        window.requestAnimationFrame(this.backtop);
+        window.scrollTo(0, c - c / 8);
+      }
     }
   }
 };

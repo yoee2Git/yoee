@@ -11,29 +11,30 @@
       <b-col md="6" offset-md="3">
         <h5>前端开始之路:</h5>
         <p>
-          2018年12月4日，
-          <a href="https://zh.wikipedia.org/zh-hans/Flutter">Flutter</a> 1.0在Flutter Live活动中发布，是该框架的第一个“稳定”版本。(Flutter是一个由谷歌开发的开源移动应用软件开发工具包，用于为Android、iOS、 Windows、Mac、Linux、Google Fuchsia开发应用[5]。)
+          Google于2018年12月4日,在Flutter Live活动中发布
+          <a href="https://zh.wikipedia.org/zh-hans/Flutter">Flutter</a> 1.0,第一个“稳定”版本。(Flutter是由谷歌开发的开源移动应用软件开发工具包，用于为Android、iOS、 Windows、Mac、Linux、Google Fuchsia开发应用。一套代码,多端运行!!!)
+          <br>
+          <p>
+            对于想开发一款自己的APP的同学来说,是非常振奋人心,充满期待的.
+          </p>
         </p>
-        <p>对此是非感兴趣,并决定查阅,学习!</p>
         <div>
-          近1年半的学习
-          <br />
           <hr>
-          前端技术栈:{ [熟练] HTML(5),CSS(3) || Sass ,JavaScript/ES6,Vue.js }
+          前端技术栈:{ [熟练] HTML(5),CSS(3) ,JavaScript/ES6,Vue.js(全家桶) }
           <br>
           <a href="http://taobao.yoees.com/">!淘宝首屏(部分):http://taobao.yoees.com/</a>
           <br>
           <a href="http://mi.yoees.com/">!小米官网:http://mi.yoees.com/</a>
           <br>
-          <a href="http://m.meituan.yoees.com/#/">!美团web app:http://m.meituan.yoees.com/#/</a>
+          <a href="http://m.meituan.yoees.com/#/">!美团(vue.js)web app:http://m.meituan.yoees.com/#/</a>
           <hr>
-          后端技术栈:{ [熟悉] Node.js => (Express koa2 nuxt.js) }
+          后端技术栈:{ [熟悉] Node.js => (Express koa2(中间件) nuxt.js(SRR.服务器渲染) }
           <br>
-          <a href="https://github.com/yoee2Git/meituan.git">!美团 PC(已开发完,暂未上线):https://github.com/yoee2Git/meituan.git</a>
+          <a href="https://github.com/yoee2Git/meituan.git">!美团(nuxt.js, koa2) PC(暂未上线):https://github.com/yoee2Git/meituan.git</a>
           <br>
-          <a href="http://yoees.com">YOEE(博客 nuxt.js &amp; Koa2):http://yoees.com</a>
+          <a href="http://yoees.com">YOEE(个人博客 nuxt.js &amp; Koa2)):http://yoees.com</a>
           <hr>
-          团队协作/模块化: { Git/Github, Webpack, [了解]Linux, Nginx | pm2(上线部署) }
+          团队协作/模块化: { Git &amp; Github, Webpack, [了解]Linux, Nginx | pm2(上线部署) }
         </div>
       </b-col>
     </b-row>
