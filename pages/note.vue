@@ -27,10 +27,12 @@
         </div>
       </b-col>
       <b-col sm="8" md="9" lg="9" xl="10">
-        <b-carousel id="carousel-fade" style="text-shadow: 0px 0px 2px #000" fade indicators>
+        <img src="~@/assets/img/note/codeMan.jpg">
+        <img src="~@/assets/img/note/noteweiper-1.png">
+        <!-- <b-carousel id="carousel-fade" style="text-shadow: 0px 0px 2px #000" fade indicators>
           <b-carousel-slide img-src="~@/assets/img/note/noteweiper-1.png"></b-carousel-slide>
           <b-carousel-slide img-src="~@/assets/img/note/noteweiper-3.png"></b-carousel-slide>
-        </b-carousel>
+        </b-carousel> -->
       </b-col>
     </b-row>
   </b-container>
@@ -47,9 +49,13 @@ export default {
   overflow: scroll;
   position: relative;
   top: 1.2rem;
-  padding-bottom: 1.5rem;
   .h-item{
     padding: 4px 0px;
   }
+}
+img{
+  position: relative;
+  width: 100%;
+  margin: 1rem 0rem;
 }
 </style>
