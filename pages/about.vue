@@ -120,6 +120,7 @@ export default {
 <style lang='scss' scoped>
 .inblack-move {
   margin: 5rem 0;
+  padding-bottom: .01rem;
   position: relative;
   .about-info {
     font-size: 1rem;
@@ -147,7 +148,6 @@ export default {
   }
 }
 .info {
-  margin-bottom: 2rem;
   p {
     text-indent: 2rem;
     margin: 1rem 0rem;
